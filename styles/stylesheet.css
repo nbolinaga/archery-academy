@@ -1,0 +1,449 @@
+/* Header 1, Arial Bold, 40px
+Header 2, Arial Bold, 24px
+Header 3, Arial Bold, 17px
+Body, Arial Regular, 17px */
+
+/* CALL-OUTS & QUOTES
+“ Quotes and call-outs should use
+Arial Regular, 30px. Use #03a3df
+if on a light background.”
+— SPEAKER’S NAME, ARIAL BOLD, 14PX, ALL CAPS */
+
+/* PRIMARY
+r 3, g 163, b 223 light blue
+#03a3df */
+
+/* SECONDARY
+r 27, g 68, b 127 blue
+#1b447f
+r 236, g 183, b 34 yellow
+#ecb722
+r 68, g 68, b 68 dark grey
+#444444 */
+/* GENERAL-------------------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+}
+html,body {
+    margin:0;
+    padding:0;
+}
+body {
+  background-color: lightgrey;
+}
+/* GRID----------------------------------------------------------*/
+.main-head {
+  grid-area: header;
+}
+.content {
+  grid-area: content;
+}
+.main-nav {
+  grid-area: nav;
+}
+.side {
+  grid-area: sidebar;
+}
+.news {
+  grid-area: news;
+}
+.main-footer {
+  grid-area: footer;
+}
+.instructor {
+  grid-area: side;
+}
+.about-us{
+  grid-area: about;
+}
+.services{
+  grid-area: services;
+}
+.classes{
+  grid-area: classes;
+}
+.private{
+  grid-area: private;
+}
+.policy{
+  grid-area: policy;
+}
+.images{
+  grid-area: images;
+}
+.workers{
+  grid-area: workers;
+}
+body{
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "nav nav nav nav"
+    "header header header header"
+    "news content content sidebar"
+    "policy policy policy policy"
+    "footer footer footer footer";
+}
+body.about{
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "nav nav nav nav"
+    "header header header header"
+    "about about side side"
+    "footer footer footer footer";
+}
+body.offers{
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "nav nav nav nav"
+    "header header header header"
+    "services services services services"
+    "classes classes private private"
+    "footer footer footer footer";
+}
+body.gallery{
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "nav nav nav nav"
+    "header header header header"
+    "images images images images"
+    "footer footer footer footer";
+}
+body.teachers{
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "nav nav nav nav"
+    "header header header header"
+    ". workers workers ."
+    "footer footer footer footer";
+}
+/* HEADER--------------------------------------------------------*/
+header {
+  background-color: rgb(68, 68, 68);
+  overflow: hidden;
+  width: 100%;
+  margin-top: 48px;
+}
+header h1 {
+  color: white;
+  padding-top: 40px;
+  text-transform: uppercase;
+}
+header img {
+  float: left;
+  padding: 20px 30px;
+  width: 400px;
+  height: auto;
+  margin-right: 5%;
+}
+header a.sign {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: right;
+}
+header a:hover {
+    background-color: #111;
+}
+header a.sign {
+  transition-property: font-size;
+  transition-duration: 1s;
+  transition-delay: 0;
+}
+header a.sign:hover{
+  font-size: 150%;
+}
+/* NAV-----------------------------------------------------------*/
+nav {
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #1b447f;
+  margin-bottom: 0;
+}
+nav li {
+  float: left;
+}
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: 0;
+}
+nav li a:hover {
+  background-color: #111;
+}
+nav ul {
+  list-style-type: none;
+}
+/* FOOTER--------------------------------------------------------*/
+footer {
+  background-color: #ecb722;
+  width: 100%;
+  display: grid;
+  padding-top: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 180px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+}
+footer img{
+  padding-left: 15%;
+  grid-column: 1/2;
+  grid-row: 1;
+}
+footer ul{
+  list-style: none;
+  text-align: center;
+  grid-column: 2/3;
+  grid-row: 1;
+}
+footer iframe{
+  grid-column: 3/4;
+  grid-row: 1;
+  padding-left: 15%;
+  padding-bottom: 10px;
+  width: 80%;
+  height: 150px;
+  /* border-image: url(images/footer-image.jpg) 30 stretch; */
+}
+/* HOMEPAGE-----------------------------------------------------*/
+.news{
+  padding-left: 10%;
+}
+aside.news h3{
+  color: #03a3df;
+}
+.content h3{
+  color: #03a3df;
+}
+.policy{
+  text-align: center;
+}
+.policy p{
+  font-size: 12px;
+}
+.policy h3{
+  color: #03a3df;
+}
+.content video{
+  z-index: -1;
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 10px;
+}
+.content {
+  margin-left: auto;
+  margin-right: auto;
+}
+.side{
+    padding-right: 10%;
+}
+.side h3{
+  color: #03a3df;
+}
+.side a {
+  display: block;
+  color: black;
+  background-color: #ecb722;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+}
+.side a:hover {
+  color: white;
+  background-color: black;
+}
+/* ABOUT-US----------------------------------------------------*/
+.about h2{
+    color: #03a3df;
+}
+.about-us{
+  padding-left: 10%;
+}
+.about-us ul{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  text-decoration: none;
+}
+.about section.instructor ul{
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+}
+.about section.instructor img{
+  margin: 20px;
+}
+section.instructor{
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+}
+.link{
+  display: block;
+  color: black;
+  background-color: #ecb722;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-bottom: 10px ;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+}
+.link:hover {
+ color: white;
+ background-color: black;
+}
+/* CALENDAR----------------------------------------------------*/
+.news h3 {
+  color: #03a3df;
+}
+.content ul{
+  line-height: 3;
+}
+/* GALLERY----------------------------------------------------*/
+.gallery h2{
+  color: #03a3df;
+}
+.images{
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
+}
+.images ul{
+list-style: none;
+}
+.images img{
+  height: 200px;
+  width: auto;
+  transition-property:height;
+  transition-duration: 1s;
+  transition-delay: 0;
+}
+.images img:hover{
+  height: 500px;
+  width: auto;
+}
+/* INSTRUCTORS----------------------------------------------------*/
+.ins a.al{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-bottom: 10px ;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+}
+.ins a.pl {
+  display: block;
+  color: white;
+  background-color: #1b447f;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-bottom: 10px ;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+}
+.ins a.pl:hover {
+ color: white;
+ background-color: black;
+}
+.workers h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.workers h2 {
+  color: #03a3df;
+}
+.workers img{
+  height: 200px;
+  width: auto;
+  transition-property:height;
+  transition-duration: 1s;
+  transition-delay: 0;
+}
+.workers img:hover{
+  height: 250px;
+  width: auto;
+}
+/* CLASSES----------------------------------------------------*/
+.classes {
+margin-left: auto;
+margin-right: auto;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 17px;
+font-weight: normal;
+}
+.private {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  text-align: center;
+}
+.private ul{
+  list-style: none;
+}
+.offers h3{
+  color: #03a3df;
+}
