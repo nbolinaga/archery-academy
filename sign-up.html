@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+  </head>
+  <body class="sign-up">
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="instructors.html">Instructors</a></li>
+      </ul>
+    </nav>
+    <header class="main-head">
+      <img src="images/archeryAcademy-logo-color.png" alt="blue logo of bulleyes with arrow">
+      <h1>Straight to the Point</h1>
+      <h3><a class="sign" href="#1">Sign up for classes</a></h3>
+    </header>
+    <section class="form">
+      <h2>Sign-up Form</h2>
+      <p>Give us your information and we will contact you as soon as posible</p>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Contact Information</legend>
+          <label for="firstname">First Name: <input type="text" name="first-name" id="firstname"></label>
+          <label>Last name: <input type="text" name="last-name"></label>
+          <label>Email: <input type="email" name="user-email" required></label>
+          <label>Phone Number: <input type="tel" name="user-tel"></label>
+          <label>Student's age: <input type="number" min="18" name=”user-age”></label>
+        </fieldset>
+        <fieldset>
+          <legend>Choose a Class</legend>
+          <p>Group Lessons</p>
+            <input class="form-radio" type="radio" name="class" value="A101" checked> A101 Basic Archery<br>
+            <input  class="form-radio" type="radio" name="class" value="A102"> A102 Intermediate Archery<br>
+            <input  class="form-radio" type="radio" name="class" value="A103"> A103 Advanced Archery<br>
+          <p>Private Lessons</p>
+            <input  class="form-radio" type="radio" name="class" value="1"> Private 1<br>
+            <input  class="form-radio" type="radio" name="class" value="2"> Private 2 <br>
+            <input  class="form-radio" type="radio" name="class" value="3"> Private 3 <br>
+        </fieldset>
+        <fieldset>
+          <legend>Comments</legend>
+          <textarea name="message" rows="10" cols="80">
+          </textarea>
+        </fieldset>
+          <input type="submit" onclick="alert('Form submitted, we will contact you soon')">
+      </form>
+    </section>
+    <section class="classes">
+      <h3>Classes</h3>
+      <article>
+      <h4> Name: A101 Basic Archery</h4>
+      <ul>
+        <li><b>Description:</b> A101 is a basic archery course that focuses on beginning archery safety, skills, and drills. Participants learn about archery form, range rules and etiquette. Form training and fun games are introduced in this class.</li>
+        <li>Equipment will be provided with exception of safety kit.</li>
+        <li><b>Cost:</b> $120/month</li>
+        <li><b>Schedule:</b> Mondays and Wednesdays, 4-5pm</li>
+        <li><b>Prerequisite:</b> Interest in learning about the sport of archery. Minimum age  8 years old or 7 w/ pre-evaluation.</li>
+      </ul>
+      </article>
+      <article>
+      <h4> Name: A102 Intermediate Archery</h4>
+      <ul>
+        <li><b>Description:</b> A102 is an intermediate archery course that focuses on intermediate archery safety, form, and introduces new equipment styles of shooting Recurve and Compound bows. Fun games and form reinforcement techniques are emphasized in this class.</li>
+        <li>Equipment will be provided with exception of safety kit.</li>
+        <li><b>Cost:</b> $120/month</li>
+        <li><b>Schedule:</b>Tuesdays and Thursdays, 4-5pm</li>
+        <li><b>Prerequisite:</b> Interest in learning about the sport of archery. Minimum age  8 years old or 7 w/ pre-evaluation.</li>
+      </ul>
+      </article>
+      <article>
+      <h4> Name: A103 Advanced Archery</h4>
+      <ul>
+        <li><b>Description:</b> After taking the A101, A102 classes, students are eligible to participate in the A103 class. This class focuses on a continued education towards tournament styles of shooting used by many archery tournament associations from around the world. Along with the tournament lesson, participants receive continued knowledge around their shooting form and advice on personal equipment selection</li>
+        <li>Equipment will be provided with exception of safety kit.</li>
+        <li><b>Cost:</b> $120/month</li>
+        <li><b>Schedule:</b>  Tuesdays and Thursdays, 5-6pm</li>
+        <li><b>Prerequisite:</b> A101/A102 or equivalent. Minimum age  7 years old.</li>
+      </ul>
+      </article>
+    </section>
+    <section class="private">
+      <h3>Private Lessons</h3>
+      <article>
+        <h3>1</h3>
+        <ul>
+        <li><b>Type:</b> Single Lesson</li>
+        <li><b>Description:</b>1 hour of expert guidance by a USA Archery-certified coach</li>
+        <li><b>Price:</b> $50</li>
+      </ul>
+      </article>
+      <article>
+        <h3>2</h3>
+        <ul>
+        <li><b>Type:</b> 3 Lesson Package</li>
+        <li><b>Description:</b>3 lessons, 1 hour each of expert guidance by a USA Archery-certified coach</li>
+        <li><b>Price:</b> $140</li>
+      </ul>
+      </article>
+      <article>
+        <h3>3</h3>
+        <ul>
+        <li><b>Type:</b> 10 Lesson Package</li>
+        <li><b>Description:</b>10 lessons, 1 hour each of expert guidance by a USA Archery-certified coach</li>
+        <li><b>Price:</b> $380</li>
+      </ul>
+      </article>
+    </section>
+    <footer class="main-footer">
+      <img src="images/archeryAcademy-logo-white.png" alt="blue logo of bulleyes with arrow">
+      <ul>
+        <li>Straight to the Point Archery</li>
+        <li>528 Nock Point Ln</li>
+        <li>Tacoma, WA 98412</li>
+        <li>archery-education@example.com</li>
+        <li>(253)555-1010</li>
+      </ul>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2712.5902030931597!2d-122.53755478438467!3d47.16587987915788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549100daa12b7867%3A0xb7be022b12e0a4da!2sPoint+Ln+SW%2C+Lakewood%2C+WA+98499!5e0!3m2!1ses-419!2sus!4v1542732949371"
+       width="300" height="225" style="border:0" allowfullscreen></iframe>
+    </footer>
+  </body>
+</html>
+<!-- Document checking completed. No errors or warnings to show. -->

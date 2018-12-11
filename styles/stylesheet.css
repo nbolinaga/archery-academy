@@ -94,6 +94,9 @@ body {
 .workers{
   grid-area: workers;
 }
+.form{
+  grid-area: form;
+}
 body{
   display: grid;
   grid-gap: 30px;
@@ -149,6 +152,17 @@ body.teachers{
     "nav nav nav nav"
     "header header header header"
     ". workers workers ."
+    "footer footer footer footer";
+}
+body.sign-up{
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "nav nav nav nav"
+    "header header header header"
+    "private form form classes"
     "footer footer footer footer";
 }
 /* HEADER--------------------------------------------------------*/
@@ -304,6 +318,12 @@ aside.news h3{
   color: white;
   background-color: black;
 }
+iframe.youtube{
+  z-index: -1;
+  max-width: 100%;
+  height: 300px;
+  padding-bottom: 10px;
+}
 /* ABOUT-US----------------------------------------------------*/
 .about h2{
     color: #03a3df;
@@ -432,6 +452,7 @@ margin-right: auto;
 font-family: Arial, Helvetica, sans-serif;
 font-size: 17px;
 font-weight: normal;
+padding-left: 10%;
 }
 .private {
   margin-left: auto;
@@ -440,10 +461,53 @@ font-weight: normal;
   font-size: 17px;
   font-weight: normal;
   text-align: center;
+  padding-right: 10%;
 }
 .private ul{
   list-style: none;
 }
 .offers h3{
   color: #03a3df;
+}
+/* SIGN UP----------------------------------------------------*/
+.sign-up .classes{
+  font-size: 10px;
+  text-align: justify;
+  padding-right: 10%;
+}
+.sign-up .private{
+  font-size: 10px;
+}
+/* FORM----------------------------------------------------*/
+form{
+   font-family: Arial, Helvetica, sans-serif;
+ }
+ fieldset{
+   margin-bottom: 20px;
+ }
+input[type=text], select, textarea, input[type=Email],input[type=tel],input[type=number]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+input[type=radio] {
+
+}
+input[type=submit] {
+  background-color:#03a3df;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #444444;
 }
