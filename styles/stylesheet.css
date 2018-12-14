@@ -469,6 +469,9 @@ padding-left: 10%;
 .offers h3{
   color: #03a3df;
 }
+div.services{
+  padding-left: 5%;
+}
 /* SIGN UP----------------------------------------------------*/
 .sign-up .classes{
   font-size: 10px;
