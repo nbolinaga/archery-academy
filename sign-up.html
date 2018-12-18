@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
   </head>
   <body class="sign-up">
+    <a href="#content" class="skip">Skip to content</a>
     <nav class="main-nav">
       <ul>
         <li><a title=" Go To Homepage" href="index.html">Homepage</a></li>
@@ -17,11 +18,12 @@
       </ul>
     </nav>
     <header class="main-head">
-      <img src="images/archeryAcademy-logo-color.png" alt="blue logo of bulleyes with arrow">
+      <img src="images/archeryAcademy-logo-color.png" alt="">
       <h1>Straight to the Point</h1>
-      <h3><a class="sign" title="Sign-up" href="#1">Sign up for classes</a></h3>
+      <h2><a class="sign" title="Sign-up" href="#1">Sign up for classes</a></h2>
     </header>
     <section class="form">
+      <div id="content"></div>
       <h2>Sign-up Form</h2>
       <p>Give us your information and we will contact you as soon as posible</p>
       <form action="#" method="get">
@@ -36,20 +38,28 @@
         <fieldset>
           <legend>Choose a Class</legend>
           <p>Group Lessons</p>
-            <input class="form-radio" type="radio" name="class" value="A101" checked> A101 Basic Archery<br>
-            <input  class="form-radio" type="radio" name="class" value="A102"> A102 Intermediate Archery<br>
-            <input  class="form-radio" type="radio" name="class" value="A103"> A103 Advanced Archery<br>
+            <label for="A101">A101 Basic Archery</label>
+            <input class="form-radio" type="radio" name="class" value="A101" id="A101" checked><br>
+            <label for="A102">A102 Intermediate Archery</label>
+            <input  class="form-radio" type="radio" name="class" value="A102" id="A102"><br>
+            <label for="A103">A103 Advanced Archery</label>
+            <input  class="form-radio" type="radio" name="class" value="A103" id="A103"><br>
           <p>Private Lessons</p>
-            <input  class="form-radio" type="radio" name="class" value="1"> Private 1<br>
-            <input  class="form-radio" type="radio" name="class" value="2"> Private 2 <br>
-            <input  class="form-radio" type="radio" name="class" value="3"> Private 3 <br>
+            <label for="private1">Private 1</label>
+            <input  class="form-radio" type="radio" name="class" value="1" id="private1"><br>
+            <label for="private2">Private 2</label>
+            <input  class="form-radio" type="radio" name="class" value="2" id="private2"><br>
+            <label for="private3">Private 3</label>
+            <input  class="form-radio" type="radio" name="class" value="3" id="private3"><br>
         </fieldset>
         <fieldset>
           <legend>Comments</legend>
-          <textarea name="message" rows="10" cols="80">
+          <label for="comments">Tell us if you have any comments</label>
+          <textarea name="message" rows="10" cols="80" id="comments">
           </textarea>
         </fieldset>
-          <input type="submit" onclick="alert('Form submitted, we will contact you soon')">
+          <label for="submit"></label>
+          <input type="submit" onclick="alert('Form submitted, we will contact you soon')" id="submit">
       </form>
     </section>
     <section class="classes">
@@ -113,7 +123,7 @@
       </article>
     </section>
     <footer class="main-footer">
-      <img src="images/archeryAcademy-logo-white.png" alt="blue logo of bulleyes with arrow">
+      <img src="images/archeryAcademy-logo-white.png" alt="">
       <ul>
         <li>Straight to the Point Archery</li>
         <li>528 Nock Point Ln</li>
